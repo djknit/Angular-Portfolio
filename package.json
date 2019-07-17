@@ -1,0 +1,35 @@
+{
+  "name": "Angular-Portfolio",
+  "version": "1.0.0",
+  "description": "My original portfolio rewritten using AngularJS",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm run copy-libs",
+    "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist,jquery/dist}/**/*\" app/lib -C",
+    "prestart": "npm install",
+    "start": "http-server ./app -a localhost -p 8000 -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djknit/Angular-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djknit/Angular-Portfolio/issues"
+  },
+  "homepage": "https://github.com/djknit/Angular-Portfolio#readme",
+  "dependencies": {
+    "angular": "^1.7.8",
+    "angular-animate": "^1.7.8",
+    "angular-resource": "^1.7.8",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.7.8",
+    "cpx": "^1.5.0",
+    "http-server": "^0.11.1"
+  }
+}
