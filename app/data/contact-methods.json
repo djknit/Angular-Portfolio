@@ -1,0 +1,73 @@
+[
+  {
+    "link": {
+      "url": "mailto:djknit@gmail.com",
+      "notForBrowser": true
+    },
+    "text": {
+      "top": "Send me an e-mail",
+      "bottom": "djknit@gmail.com"
+    },
+    "logo": {
+      "type": "image",
+      "url": "images/email.png",
+      "alt": "Email symbol"
+    }
+  }
+  ,
+  {
+    "link": {
+      "url": "https://www.linkedin.com/in/djknit/"
+    },
+    "text": {
+      "top": "Visit my"
+    },
+    "logo": {
+      "type": "image",
+      "url": "images/linked_in_logo.png",
+      "alt": "LinkedIn logo"
+    }
+  }
+  ,
+  {
+    "link": {
+      "url": "https://www.github.com/djknit/"
+    },
+    "text": {
+      "top": "Or my"
+    },
+    "logo": {
+      "type": "image",
+      "url": "images/github_logo.png",
+      "alt": "GitHub logo"
+    }
+  }
+  ,
+  {
+    "link": {
+      "url": "tel:+1-785-410-5644",
+      "notForBrowser": true
+    },
+    "text": {
+      "top": "Call or text",
+      "bottom": "(785) 410-5644"
+    },
+    "logo": {
+      "type": "icon",
+      "class": "fas fa-phone"
+    }
+  }
+  ,
+  {
+    "link": {
+      "url": "documents/Resume-David-Knittel.pdf"
+    },
+    "text": {
+      "top": "Download my"
+    },
+    "logo": {
+      "type": "text",
+      "text": "Resume"
+    }
+  }
+]

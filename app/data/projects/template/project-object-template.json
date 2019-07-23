@@ -1,0 +1,25 @@
+{
+  "isActive": false,
+  "name": "",
+  "imageUrl": "",
+  "description": {
+    "pieces": [
+      {
+        "type": "text",
+        "text": ""
+      }
+    ]
+  },
+  "role": "Sole Developer",
+  "tech": {
+    "front": [],
+    "back": [],
+    "apis": []
+  },
+  "notes": [],
+  "links": {
+    "repo": "",
+    "live": "",
+    "readme": ""
+  }
+}

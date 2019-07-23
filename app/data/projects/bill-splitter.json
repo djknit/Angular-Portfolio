@@ -1,0 +1,41 @@
+{
+  "show": false,
+  "name": "Delux Bill Splitter",
+  "imageUrl": "images/bill_splitter.png",
+  "description": {
+    "pieces": [
+      {
+        "type": "text",
+        "text": "This is a project that I am especially passionate about because it is inspired by a problem that I have dealt with and it is a tool that I plan to use myself. The situation that inspired the app was when I wanted to help myself and my four roommates to split the rent and bills (which were not all paid by the same person) so that we would minimize the number of payments we had to make between each other. You can read more about the problem that inspired the app in the "
+      },
+      {
+        "type": "link",
+        "text": "Inspiration",
+        "url": "documents/bill-splitter.html#inspiration"
+      },
+      {
+        "type": "text",
+        "text": " section of the Readme. In addition to the problem that inspired the app, my goal is to make sure that the app can easily be used for any possible bill splitting situation that could arise."
+      }
+    ]
+  },
+  "role": "Sole Developer",
+  "tech": {
+    "front": [
+      "angularJs",
+      "bootstrap",
+      "angularSeed"
+    ],
+    "back": [
+      "node",
+      "express"
+    ],
+    "apis": []
+  },
+  "notes": [],
+  "links": {
+    "repo": "https://github.com/djknit/Delux-Bill-Splitter",
+    "live": "https://delux-bill-splitter.herokuapp.com/",
+    "readme": "documents/bill-splitter.html"
+  }
+}

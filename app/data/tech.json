@@ -1,0 +1,102 @@
+{
+  "react": {
+    "link": "https://reactjs.org/",
+    "name": "React"
+  },
+  "bulma": {
+    "link": "https://bulma.io/",
+    "name": "Bulma"
+  },
+  "node": {
+    "link": "https://nodejs.org/en/about/",
+    "name": "Node"
+  },
+  "axios": {
+    "link": "https://www.npmjs.com/package/axios/",
+    "name": "Axios"
+  },
+  "moment": {
+    "link": "https://momentjs.com/",
+    "name": "Moment"
+  },
+  "express": {
+    "link": "https://expressjs.com/",
+    "name": "Express"
+  },
+  "passport": {
+    "link": "https://www.passportjs.org/",
+    "name": "Passport"
+  },
+  "mongo": {
+    "link": "https://www.mongodb.com/what-is-mongodb/",
+    "name": "MongoDB"
+  },
+  "mongoose": {
+    "link": "https://mongoosejs.com/",
+    "name": "Mongoose"
+  },
+  "nodemailer": {
+    "link": "https://nodemailer.com/about/",
+    "name": "Nodemailer"
+  },
+  "bcrypt": {
+    "link": "https://www.npmjs.com/package/bcrypt/",
+    "name": "Bcrypt"
+  },
+  "googleBooks": {
+    "link": "https://developers.google.com/books/",
+    "name": "Google Books API"
+  },
+  "handlebars": {
+    "link": "https://handlebarsjs.com/",
+    "name": "Handlebars"
+  },
+  "jQuery": {
+    "link": "https://jquery.com/",
+    "name": "jQuery"
+  },
+  "mySql": {
+    "link": "https://dev.mysql.com/doc/refman/8.0/en/introduction.html",
+    "name": "MySQL"
+  },
+  "vue": {
+    "link": "https://vuejs.org/",
+    "name": "Vue"
+  },
+  "veeValidate": {
+    "link": "https://baianat.github.io/vee-validate/",
+    "name": "VeeValidate"
+  },
+  "vueCroppa": {
+    "link": "https://zhanziyang.github.io/vue-croppa/#/",
+    "name": "Vue Croppa"
+  },
+  "meetup": {
+    "link": "https://www.meetup.com/meetup_api/",
+    "name": "Meetup API"
+  },
+  "linkPreview": {
+    "link": "https://www.linkpreview.net/",
+    "name": "Link Preview API"
+  },
+  "sequelize": {
+    "link": "http://docs.sequelizejs.com/",
+    "name": "Sequelize"
+  },
+  "cheerio": {
+    "link": "https://github.com/cheeriojs/cheerio#readme",
+    "name": "Cheerio"
+  },
+  "bandsInTown": {
+    "link": "https://www.artists.bandsintown.com/bandsintown-api",
+    "name": "BandsInTown API"
+  },
+  "spotify": {
+    "link": "https://developer.spotify.com/documentation/web-api/",
+    "name": "Spotify API"
+  },
+  "omdb": {
+    "link": "http://www.omdbapi.com/",
+    "name": "OMDB API"
+  }
+}
