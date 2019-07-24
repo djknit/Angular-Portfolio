@@ -6,7 +6,7 @@ angular
     [
       'core',
       'portfolioView',
-      'readmeView',
-      'projectCard'
+      'projectCard',
+      'ngRoute'
     ]
   );

@@ -8,9 +8,9 @@ angular
         .when('/', {
           template: '<portfolio-view></portfolio-view>'
         })
-        .when('/readmes/:projectName', {
-          template: '<readme-view></readme-view>'
-        })
+        // .when('/readmes/:projectName', {
+        //   template: '<readme-view></readme-view>'
+        // })
         .otherwise('/');
     }
   ]);

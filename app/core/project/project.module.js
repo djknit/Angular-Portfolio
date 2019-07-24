@@ -2,6 +2,6 @@
 
 angular
   .module(
-    'core.contactMethods',
+    'core.project',
     []
   );

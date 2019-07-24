@@ -1,0 +1,9 @@
+<div>
+  <div>
+    {{$ctrl.projects}}
+  </div>
+  <div ng-repeat="project in $ctrl.projects">
+    {{project}}
+  </div>
+  <project-card ng-repeat="project in $ctrl.projects" project-file-name="{{project}}" />
+</div>
