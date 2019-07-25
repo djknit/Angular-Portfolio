@@ -1,0 +1,25 @@
+<!-- source: https://stackoverflow.com/questions/15696416/what-is-the-best-way-to-conditionally-apply-attributes-in-angularjs -->
+<a
+  href="{{$ctrl.data.link.url}}"
+  class="contact-method"
+  ng-attr-target="{{$ctrl.data.link.notForBrowser === true ? undefined : '_blank'}}"
+  ng-attr-rel="{{$ctrl.data.link.notForBrowser === true ? undefined : 'noopener noreferrer'}}"
+>
+
+  <p>{{$ctrl.data.text.top}}</p>
+
+  <img
+    ng-if="$ctrl.data.logo.type === 'image'"
+    src="{{$ctrl.data.logo.url}}"
+    alt="{{$ctrl.data.logo.alt}}"
+  />
+  <span ng-if="$ctrl.data.logo.type === 'text'">
+    {{$ctrl.data.logo.text}}
+  </span>
+  <span ng-if="$ctrl.data.logo.type === 'icon'">
+    <i class="{{$ctrl.data.logo.class}}" />
+  </span>
+
+  <p>{{$ctrl.data.text.bottom}}</p>
+
+</a>

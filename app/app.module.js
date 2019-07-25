@@ -6,7 +6,9 @@ angular
     [
       'core',
       'portfolioView',
-      'projectCard',
-      'ngRoute'
+      'ngRoute',
+      'pageHeader',
+      'pageSection',
+      'textLink'
     ]
   );

@@ -1,7 +1,7 @@
 angular
   .module('projectCard')
   .component('projectCard', {
-    templateUrl: 'components/project-card/project.template.html',
+    templateUrl: 'components/projects-section/project-card/project.template.html',
     bindings: {
       projectFileName: '@'
     },
