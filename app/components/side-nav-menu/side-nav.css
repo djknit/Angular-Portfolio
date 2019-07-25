@@ -1,0 +1,74 @@
+#side-nav-menu {
+  position: fixed;
+  left: 2px;
+  top: 10px;
+  z-index: 2;
+}
+
+#side-nav-menu[state="hide"] {
+  display: none;
+}
+
+button#side-nav-toggle {
+  height: 30px;
+  width: 30px;
+  border: none;
+  padding: 0;
+  box-shadow: 0 0 6px black;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 2;
+}
+
+button#side-nav-toggle:hover,
+button#side-nav-toggle:focus {
+  outline: none;
+  background-color: #eaeaea;
+}
+
+button#side-nav-toggle:active {
+  box-shadow: 0px 0px .5px black;
+}
+
+button#side-nav-toggle > i.fa-compass {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 26px;
+  width: 26px;
+  font-size: 26px;
+  color: #56208a;
+  animation-name: blink;
+  animation-duration: 2s;
+}
+
+#side-nav-menu > nav {
+  background-color: #eaeaea;
+  border-radius: 4px;
+  border: solid #555555 1px;
+  box-shadow: 1.5px 3px 6px #525252;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  overflow: hidden;
+}
+
+#side-nav-menu > nav[state="closed"] {
+  height: 0;
+  width: 0;
+}
+
+#side-nav-menu > nav[state="open"] {
+  height: 127px;
+  width: 98.594px;
+}
+
+#side-nav-menu > nav a {
+  padding: 3px 0;
+}
+
+#side-nav-menu > nav a:not(:last-of-type) {
+  border-bottom: 1px solid whitesmoke;
+}

@@ -9,6 +9,7 @@ angular
       'ngRoute',
       'pageHeader',
       'pageSection',
-      'textLink'
+      'textLink',
+      'pageFooter'
     ]
   );

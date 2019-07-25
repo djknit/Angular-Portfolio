@@ -1,3 +1,129 @@
-p {
-  color: pink;
+.project {
+  background-color: #fafafa;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #444444;
+  color: #202020;
+  box-shadow: 2px 4px 2px #525252;
+}
+
+.project > div {
+  border-color: #444444;
+}
+
+.project h3 {
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: #050505;
+}
+
+.project > .card-body {
+  text-align: left;
+  border-top: 1px solid #444444;
+}
+
+.project > .card-body:nth-child(2) {
+  border-top: none;
+}
+
+.project > .card-body:nth-child(3) {
+  border-top: none;
+  padding-top: 0;
+}
+
+.project > .card-body > img {
+  width: 100%;
+  border: 1px solid #444444;
+}
+
+.project > .card-body > h6 {
+  text-align: center;
+  color: #101010
+}
+
+.project > .card-body > a {
+  color: #606060;
+  text-decoration: underline;
+}
+
+.project > .card-body > a:hover {
+  color: black;
+}
+
+.project > .card-body .col-6 {
+  text-align: center;
+}
+
+.project > .card-body ul {
+  list-style-type: none;
+  line-height: 1.7;
+  padding-left: calc(50% - 39px);
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.project > .card-body .col-6:first-child ul {
+  padding-left: calc(50% - 42px);
+}
+
+.project > .card-body .col-6:first-child ul.apis {
+  padding-left: calc(50% - 47px);
+}
+
+.project > .card-body label {
+  color: #101010;
+  margin-bottom: 0;
+  border-bottom: 1px solid black;
+  padding: 0 6px;
+  font-size: 1.05em;
+}
+
+.project ul > li {
+  padding-left: 6px;
+  padding-right: 2px;
+}
+
+.project li > a {
+  color: #202020;
+}
+
+.project > li > a:hover {
+  font-weight: 500;
+  color: #202020;
+}
+
+.project > .card-footer {
+  padding: 0;
+}
+
+.project > .card-footer > .btn-group {
+  width: 100%;
+}
+
+.project > .card-footer > .btn-group > .btn {
+  border: 2px solid #aaaaaa;
+  border-radius: 0;
+  color: white;
+  padding: 0;
+  flex: 1 1 0;
+  vertical-align: middle;
+  display: flex;
+  box-shadow: 1.5px 3px 1.5px #525252;
+}
+
+.project > .card-footer > .btn-group > .btn:focus {
+  border: 2px solid #6c757d;
+  box-shadow: none;
+}
+
+.project > .card-footer .btn > span {
+  margin: auto;
+}
+
+.project > .card-footer > .btn-group .btn:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.project > .card-footer > .btn-group .btn:last-child {
+  border-bottom-right-radius: 10px;
 }

@@ -1,3 +1,52 @@
-p {
-  color: green;
+.contact-method {
+  background-color: rgb(99, 200, 382);
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  width: 250px;
+  vertical-align: top;
+  height: 137px;
+  margin: 0 20px 20px 0;
+  box-shadow: 3px 6px 3px #525252;
+  border: .5px solid #525252;
+  position: relative;
+}
+
+.contact-method:hover {
+  animation: shake 1s infinite;
+}
+
+.contact-method:focus {
+  box-shadow: .5px 1px .5px #525252;
+}
+
+.contact-method p {
+  font-size: 26px;
+  text-align: center;
+  color: black;
+}
+.contact-method p:last-child {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.contact-method img {
+  height: 34px;
+  width: auto;
+}
+
+.contact-method span {
+  color: black;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.contact-method img.heartbeat {
+  animation: heartbeat 500ms infinite;
+}
+
+.contact-method span.heartbeat {
+  animation: text-heartbeat 500ms infinite;
 }

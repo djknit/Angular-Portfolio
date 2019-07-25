@@ -10,8 +10,8 @@
 
   <img
     ng-if="$ctrl.data.logo.type === 'image'"
-    src="{{$ctrl.data.logo.url}}"
-    alt="{{$ctrl.data.logo.alt}}"
+    ng-attr-src="{{$ctrl.data.logo.url}}"
+    ng-attr-alt="{{$ctrl.data.logo.alt}}"
   />
   <span ng-if="$ctrl.data.logo.type === 'text'">
     {{$ctrl.data.logo.text}}
