@@ -7,7 +7,7 @@ angular
     controller: [
       'ContactMethods',
       function contactMethodCtrl(ContactMethods) {
-        this.contactMethods = ContactMethods.query();
+        this.contactMethods = ContactMethods;
       }
     ]
   });

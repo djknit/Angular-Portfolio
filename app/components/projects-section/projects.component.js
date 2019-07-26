@@ -7,7 +7,7 @@ angular
     controller: [
       'ProjectList',
       function projectsSectionCtrl(ProjectList) {
-        this.projectDataFileNames = ProjectList.query();
+        this.projectDataFileNames = ProjectList;
       }
     ]
   });

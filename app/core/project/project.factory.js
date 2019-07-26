@@ -5,16 +5,27 @@ angular
   .factory('Project', [
     '$resource',
     function projectDataFactory($resource) {
-      return $resource(
-        'data/projects/:fileName',
-        {},
-        {
-          get: {
-            method: 'GET',
-            params: {},
-            isArray: false
-          }
-        }
-      );
+
+      function replaceTechIdsWithTechData(idsArray, techData) {
+        idsArray.forEach((techId, index) => {
+          idsArray[index] = techData[techId];
+        });
+      }
+
+      return function getProjectData(fileName) {
+        return new Promise((resolve, reject) => {
+          $resource('data/tech.json').get(
+            techData => $resource(`data/projects/${fileName}`).get(
+              projectData => {
+                let { tech } = projectData;
+                replaceTechIdsWithTechData(tech.front, techData);
+                replaceTechIdsWithTechData(tech.back, techData);
+                replaceTechIdsWithTechData(tech.apis, techData);
+                resolve(projectData);
+              }
+            )
+          )
+        });
+      }
     }
   ]);

@@ -7,6 +7,10 @@
     "link": "https://bulma.io/",
     "name": "Bulma"
   },
+  "bootstrap": {
+    "link": "https://getbootstrap.com/",
+    "name": "Bootstrap"
+  },
   "node": {
     "link": "https://nodejs.org/en/about/",
     "name": "Node"
@@ -98,5 +102,13 @@
   "omdb": {
     "link": "http://www.omdbapi.com/",
     "name": "OMDB API"
+  },
+  "angularJs": {
+    "link": "https://angularjs.org/",
+    "name": "AngularJS"
+  },
+  "angularSeed": {
+    "link": "https://github.com/angular/angular-seed#readme",
+    "name": "Angular-seed"
   }
 }
