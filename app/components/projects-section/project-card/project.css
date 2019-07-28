@@ -54,44 +54,6 @@
   text-align: center;
 }
 
-.project > .card-body ul {
-  list-style-type: none;
-  line-height: 1.7;
-  padding-left: calc(50% - 39px);
-  text-align: left;
-  margin-bottom: 0;
-}
-
-.project > .card-body .col-6:first-child ul {
-  padding-left: calc(50% - 42px);
-}
-
-.project > .card-body .col-6:first-child ul.apis {
-  padding-left: calc(50% - 47px);
-}
-
-.project > .card-body label {
-  color: #101010;
-  margin-bottom: 0;
-  border-bottom: 1px solid black;
-  padding: 0 6px;
-  font-size: 1.05em;
-}
-
-.project ul > li {
-  padding-left: 6px;
-  padding-right: 2px;
-}
-
-.project li > a {
-  color: #202020;
-}
-
-.project > li > a:hover {
-  font-weight: 500;
-  color: #202020;
-}
-
 .project > .card-footer {
   padding: 0;
 }

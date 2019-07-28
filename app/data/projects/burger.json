@@ -1,7 +1,7 @@
 {
   "show": true,
   "name": "Eat-da-Burger",
-  "imageUrl": "",
+  "imageUrl": "images/burger.png",
   "description": {
     "pieces": [
       {

@@ -1,66 +1,56 @@
 <div class="project card">
-  <div class="card-header"><h3>Book Search</h3></div>
-  <!-- <div class="card-body">
-    <img src="images/book_search.png" alt="Book Search screenshot" />
-  </div>
+
+  <div class="card-header"><h3>
+    {{$ctrl.project.name}}
+  </h3></div>
+
   <div class="card-body">
-    This app uses the Google Books API to allow users to search for books. Information and links for the books are displayed together. Users may save book information to the database. Books can be saved to the public list which is shared among all users or to the user's private list. Authentication is managed using the Passport.js Local Strategy. Passwords are hashed before being saved to the database. Authentication is verified each time a user attempts to access their data. A password reset link is generated upon a user's request and sent to the email address associated with the user's account.
+    <img
+      ng-attr-src="{{$ctrl.project.imageUrl}}"
+      alt="{{$ctrl.project.name}} screenshot"
+    />
   </div>
+
+  <div class="card-body">
+    <paragraph-pieces pieces="$ctrl.project.description.pieces"></paragraph-pieces>
+  </div>
+
   <div class="card-body">
     <h6>My Role</h6>
-    Sole Developer
+    {{$ctrl.project.role}}
   </div>
-  <div class="card-body">
+
+  <div class="card-body" ng-if="$ctrl.project.tech">
     <h6>Technologies Used</h6>
     <div class="row">
       <div class="col-6">
-        <label>Front End</label>
-        <ul>
-          <li><a href="https://reactjs.org/" target="_blank" rel="noopener">
-            React</a></li>
-          <li><a href="https://bulma.io/" target="_blank" rel="noopener">
-            Bulma</a></li>
-          <li><a href="https://nodejs.org/en/about/" target="_blank" rel="noopener">
-            Node</a></li>
-          <li><a href="https://www.npmjs.com/package/axios/" target="_blank" rel="noopener">
-            Axios</a></li>
-          <li><a href="http://momentjs.com/" target="_blank" rel="noopener">
-            Moment</a></li>
-        </ul>
-        <br />
-        <label>Public APIs</label>
-        <ul class="apis">
-          <li><a href="https://developers.google.com/books/" target="_blank" rel="noopener">
-            Google Books API</a></li>
-        </ul>
+        <tech-list
+          list-name="Front End"
+          ng-if="$ctrl.project.tech.front.length > 0"
+          tech-list="$ctrl.project.tech.front"
+        ></tech-list>
+        <br ng-if="$ctrl.project.tech.front.length > 0 && $ctrl.project.tech.apis.length > 0" />
+        <tech-list
+          list-name="Public APIs"
+          ng-if="$ctrl.project.tech.apis.length > 0"
+          tech-list="$ctrl.project.tech.apis"
+        ></tech-list>
       </div>
       <div class="col-6">
-        <label>Back End</label>
-        <ul>
-          <li><a href="https://nodejs.org/en/about/" target="_blank" rel="noopener">
-            Node</a></li>
-          <li><a href="https://expressjs.com/" target="_blank" rel="noopener">
-            Express</a></li>
-          <li><a href="http://www.passportjs.org/" target="_blank" rel="noopener">
-            Passport</a></li>
-          <li><a href="https://www.mongodb.com/what-is-mongodb/" target="_blank" rel="noopener">
-            MongoDB</a></li>
-          <li><a href="https://mongoosejs.com/" target="_blank" rel="noopener">
-            Mongoose</a></li>
-          <li><a href="https://nodemailer.com/about/" target="_blank" rel="noopener">
-            Nodemailer</a></li>
-          <li><a href="https://www.npmjs.com/package/bcrypt/" target="_blank" rel="noopener">
-            Bcrypt</a></li>
-          <li><a href="https://www.npmjs.com/package/axios/" target="_blank" rel="noopener">
-            Axios</a></li>
-        </ul>
+        <tech-list
+          list-name="Back End"
+          ng-if="$ctrl.project.tech.back.length > 0"
+          tech-list="$ctrl.project.tech.back"
+        ></tech-list>
       </div>
     </div>
   </div>
-  <div class="card-body">
+
+  <div class="card-body" ng-repeat="note in $ctrl.project.notes">
     <h6>Note</h6>
-    Many of the features of this app can be used without an account. If you wish to create an account, you can do so with only a username and password. For these reasons, there is no guest account for this app.
+    <paragraph-pieces pieces="note.pieces"></paragraph-pieces>
   </div>
+
   <div class="card-footer">
     <div class="btn-group" role="group" aria-label="links">
       <a href="https://github.com/djknit/google-books-search/" class="btn btn-secondary" target="_blank" rel="noopener">
@@ -72,6 +62,7 @@
       <a href="./documents/book-search.html" class="btn btn-secondary" target="_blank" rel="noopener">
         <span>Readme</span>
       </a>
-    </div> -->
+    </div>
   </div>
+
 </div>

@@ -6,7 +6,7 @@ angular
     templateUrl: 'components/page-section/section.template.html',
     bindings: {
       name: '@',
-      title: '@',
+      displayName: '@'
     },
     transclude: true
   });

@@ -110,5 +110,13 @@
   "angularSeed": {
     "link": "https://github.com/angular/angular-seed#readme",
     "name": "Angular-seed"
+  },
+  "request": {
+    "link": "https://www.npmjs.com/package/request",
+    "name": "Request"
+  },
+  "dotenv": {
+    "link": "https://www.npmjs.com/package/dotenv",
+    "name": "Dotenv"
   }
 }

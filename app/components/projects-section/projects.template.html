@@ -1,9 +1,9 @@
-<page-section name="projects" title="Projects">
+<page-section name="projects" display-name="Projects">
   <div class="cards container">
     <div class="row">
 
       <div class="col-xl-6" ng-repeat="fileName in $ctrl.projectDataFileNames">
-        <project-card project-data-file-name="{{fileName}}" />
+        <project-card project-data-file-name="{{fileName}}"></project-card>
       </div>
 
     </div>

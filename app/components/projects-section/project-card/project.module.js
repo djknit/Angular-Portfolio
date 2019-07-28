@@ -1,5 +1,7 @@
 angular
   .module(
     'projectCard',
-    []
+    [
+      'techList'
+    ]
   );

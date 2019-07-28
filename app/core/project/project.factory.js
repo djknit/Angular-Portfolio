@@ -9,6 +9,9 @@ angular
       function replaceTechIdsWithTechData(idsArray, techData) {
         idsArray.forEach((techId, index) => {
           idsArray[index] = techData[techId];
+          if (!techData[techId]) {
+            throw Error(`Invalid tech id: ${techId}`);
+          }
         });
       }
 

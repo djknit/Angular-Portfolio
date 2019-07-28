@@ -3,5 +3,9 @@
 angular
   .module('textLink')
   .component('textLink', {
-    templateUrl: 'components/text-link/link.template.html'
+    templateUrl: 'components/text-link/link.template.html',
+    bindings: {
+      url: '@',
+      text: '@'
+    }
   });

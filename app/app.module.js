@@ -10,6 +10,7 @@ angular
       'pageHeader',
       'pageSection',
       'textLink',
+      'paragraphPieces',
       'pageFooter'
     ]
   );
